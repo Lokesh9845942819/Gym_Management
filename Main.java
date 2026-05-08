@@ -75,7 +75,7 @@ public class Main {
         }
     }
 
-    // 🔹 ADD MEMBER WITH PLAN + ELIGIBILITY
+    // ADD MEMBER WITH PLAN + ELIGIBILITY
     public static void addMember(Connection con, Scanner sc) throws Exception {
 
         System.out.print("Enter Name: ");
@@ -130,7 +130,7 @@ public class Main {
         System.out.println("Member Added!");
     }
 
-    // 🔹 VIEW MEMBERS
+    //  VIEW MEMBERS
     public static void viewMembers(Connection con) throws Exception {
         String query = "SELECT * FROM members";
 
@@ -152,7 +152,7 @@ public class Main {
         }
     }
 
-    // 🔹 DELETE MEMBER
+    //  DELETE MEMBER
     public static void deleteMember(Connection con, Scanner sc) throws Exception {
         System.out.print("Enter Member ID to delete: ");
         int id = sc.nextInt();
@@ -167,7 +167,7 @@ public class Main {
         System.out.println(rows > 0 ? "Deleted!" : "Not found!");
     }
 
-    // 🔹 UPDATE MEMBER
+    //  UPDATE MEMBER
     public static void updateMember(Connection con, Scanner sc) throws Exception {
         System.out.print("Enter Member ID: ");
         int id = sc.nextInt();
@@ -195,7 +195,7 @@ public class Main {
         System.out.println(rows > 0 ? "Updated!" : "Not found!");
     }
 
-    // 🔹 SEARCH MEMBER
+    //  SEARCH MEMBER
     public static void searchMember(Connection con, Scanner sc) throws Exception {
         System.out.print("Enter name to search: ");
         String name = sc.nextLine();
@@ -223,7 +223,7 @@ public class Main {
         }
     }
 
-    // 🔹 CHECK MEMBERSHIP STATUS
+    //  CHECK MEMBERSHIP STATUS
     public static void checkMembership(Connection con) throws Exception {
 
         String q = "SELECT name, end_date FROM members";
